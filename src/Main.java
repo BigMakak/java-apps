@@ -1,5 +1,9 @@
 import Threads.RunnerThread;
 import Threads.ThreadCounter;
+import Wallet.Wallet;
+import Wallet.Transaction;
+
+import java.math.BigDecimal;
 
 
 public class Main {
@@ -11,7 +15,7 @@ public class Main {
 
         for (Integer value : breakingRecords.breakingRecords(scores)) {
             System.out.print("Score value: " + value);
-        } */
+        }
 
         ThreadCounter threadCounter = new ThreadCounter();
 
@@ -24,6 +28,6 @@ public class Main {
         t1.join();
         t2.join();
 
-        System.out.print(threadCounter.counterValue());
+        System.out.print(threadCounter.counterValue()); */
     }
 }
