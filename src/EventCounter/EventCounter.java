@@ -15,7 +15,7 @@ public class EventCounter {
                 new AtomicInteger(0)).incrementAndGet();
     }
 
-    public int getCount(EventCounterType eventType) {
+    public int getCount(EventCounterType eventType) throws IllegalArgumentException {
         validateType(eventType);
 
         return eventCounter.getOrDefault(eventType, new AtomicInteger(0)).get();
